@@ -1,0 +1,480 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "NTR", sans-serif;  
+    
+}
+
+body{
+    background-color: #cca2ff;    ;
+    height: 100vh;
+    width: 100%;
+    animation: fade 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+}
+
+.flex{
+    display: flex;
+}
+
+.btn-contato button{
+    display: inline-block;
+    padding: 3px  30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    background-color: #fff0ff;
+    transition: .2s;
+    cursor: pointer;    
+    
+}
+
+.interface{
+    padding: 0%;
+    display: flex;
+    max-width: 2000px;
+}
+
+/* Estilo do cabeçalho */
+
+header{
+    padding: 1% 2%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo img{
+    max-width: 400px;
+    max-height: 100px;
+    width: auto;
+    height: auto;  
+}
+
+header a{
+    color: #fff0ff;
+    text-decoration: none;
+    transition: .2s;
+    display: inline-block;
+    font-size: 25px;
+}
+
+header nav ul li a:hover{
+    transform: scale(1.2);
+    color:#7f4ca5;
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    padding: 0 40px;
+    display: inline-block;
+}
+
+.btn-contato button:hover{
+    transform: scale(1.05);
+    background-color: #7f4ca5;
+    color: #fff0ff;
+
+}
+
+/*ESTILO DO TOPO DO SITE*/
+
+section.topo-do-site{
+    padding: 40px 4% 9% 3%;
+    margin-left: 1%;
+    
+}
+
+section.topo-do-site .flex{
+    align-items: top;
+    justify-content: center;
+    
+}
+
+.img-topo-site img{
+    max-height: 650px;
+    max-width: 350px;
+    width: auto;
+    height: auto;
+}
+
+.topo-do-site h1{
+    color: #fff0ff;
+    font-size: 45px;
+    margin-bottom: 2%;
+}
+
+.topo-do-site p{
+    margin-bottom: 5%;
+    padding: 2% 25% 2% 0%;
+    color: #fff0ff;
+    font-size: 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.topo-do-site .txt-topo-do-site p{
+    margin: 40px 0%;
+}
+
+/*SOBRE MIM*/
+
+section#sobre-mim{
+    padding: 10px 4% 11% 3%;
+    background-color:#af42e1; 
+    box-shadow: 0 0 40px 10px #af42e1;
+    
+}
+
+
+
+section#sobre-mim .interface{
+    align-items: top;
+    justify-content: center;
+    filter: blur(6px);
+    transition: .5s;
+}
+
+section#sobre-mim .interface:hover{
+    filter: blur(0);
+}
+
+
+
+section#sobre-mim h1{
+    color: #f1d7ff;
+    font-size: 75px;
+}
+
+section#sobre-mim p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 38px;
+    color: #f1d7ff;
+}
+
+
+/* MEIO DO PORTFOLIO */
+
+section#minhas-especialidades {
+    padding-bottom: 9%;
+    padding-top: 8%;
+    background-color:#630097;
+    box-shadow: 0 0 40px 10px #630097;
+}
+
+
+section#minhas-especialidades .interface{
+    justify-content: center;
+    display: inline-block;
+}
+
+section#minhas-especialidades .flex{
+    justify-content: center;
+}
+
+.layout-minhas-especialidades{
+    align-items: center;
+    align-items: baseline;
+    justify-content: space-between;
+    display: flex;
+}
+
+.txt-Layout-especialidades{
+    overflow-y: scroll;
+    border: solid;
+    border-radius: 30px;
+    border-color: #cca2ff;
+    padding: 15px 30px;
+    margin: 2%;
+    background-color: #630097;
+    transition: .2s;
+    position: relative;   
+    max-height: 250px;
+}
+
+.txt-Layout-especialidades:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 40px 10px #cca2ff;
+}
+
+.txt-minhas-especialidades h1{
+    font-size: 50px;
+    color: #1b003a;
+    text-shadow: 
+    1px 1px#cca2ff
+    ,
+    1px -1px#cca2ff
+    , 
+    -1px -1px#cca2ff
+    , 
+    -1px 1px#cca2ff
+    ;
+    
+
+}
+
+.txt-Layout-especialidades h2{
+    color: #1b003a;
+    text-shadow: 
+    1px 1px#cca2ff
+    ,
+    1px -1px#cca2ff
+    , 
+    -1px -1px#cca2ff
+    , 
+    -1px 1px#cca2ff
+    ;
+}
+
+.txt-Layout-especialidades p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    color: #cca2ff;
+}
+
+.txt-Layout-especialidades::-webkit-scrollbar { 
+	display: none;
+}
+
+/*PROJETOS*/
+section#projetos{
+    box-shadow: 0 0 40px 10px #cca2ff80;
+    background-color: #230443;
+    justify-content: center;
+    padding-bottom: 5%;
+    padding-top: 3%;
+}
+
+section#projetos .interface{
+    justify-content: space-between;
+}
+
+section#projetos h2{
+    margin-left: 36%;
+    color:#f1d7ff;
+    font-size: 65px;
+}
+
+section#projetos .flex{
+    height: 100%;
+    gap: 62px;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 15%;
+    margin-left: 4%;
+}
+
+.img-projetos{
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position:0%;
+    background-color: #6f42a3a4;
+    transition: 3s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+
+.img-projetos:hover{
+    background-position:100% 100%;
+
+}
+
+/* RODAPÉ */
+
+footer {
+    padding: 60px 4%;
+    background-color:#230443;
+    box-shadow: 0 0 40px 10px #9f91b0dc;
+
+}
+
+footer .flex{
+    justify-content: space-between;
+
+}
+
+footer #line-footer{
+    padding: 20px 0px;
+}
+
+.borda{
+    border-top: 2px solid #7f4ca5;
+}
+
+footer #line-footer p{
+    color:#f1d7ff;
+    font-size: 22px;
+}
+
+.btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 25%;
+    border: none;
+    background-color: #7f4ca5;
+    font-size: 35px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: .3s;
+    transform: scale(1.05);
+}
+
+button:hover{
+    box-shadow: 0 0 10px 1px #9f91b0dc;
+
+}
+
+.overlay{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000a4;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: 600;
+    color:#f1d7ff;
+    text-shadow: 
+    1px 1px#1b003a
+    ,
+    1px -1px#1b003a
+    , 
+    -1px -1px#1b003a
+    , 
+    -1px 1px#1b003a
+    ;
+    opacity: 0;
+    transition: .5s;
+}
+
+.overlay:hover{
+    opacity: 1;
+    box-shadow:inset 0 0 40px 10px #cca2ff80;
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 1020px){
+    /* CLASSES GERAIS */
+    .flex{
+        flex-direction: column-reverse;
+    }
+
+
+    .layout-minhas-especialidades{
+        flex-direction: column-reverse;
+    }
+
+    /* CABEÇALHO*/
+
+    .menu-desktop, .btn-contato{
+        display: none;
+    }
+
+    .txt-topo-site h1{
+        font-size: 28px;
+        font-weight: 600;
+    }
+
+    .topo-do-site p{
+        margin-bottom: 5%;
+        padding: 2%;
+        color: #fff0ff;
+        font-size: 25px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 
+        'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    section#sobre-mim h1{
+        color: #f1d7ff;
+        font-size: 45px;
+        margin-left: 22%;
+    }
+
+    section#sobre-mim p{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 25px;
+        color: #f1d7ff;
+        padding-left: 5%;
+    }
+
+    .txt-minhas-especialidades h1{
+        margin-left: 4%;
+        font-size: 38px;
+        color: #1b003a;
+        text-shadow: 
+        1px 1px#cca2ff
+        ,
+        1px -1px#cca2ff
+        , 
+        -1px -1px#cca2ff
+        , 
+        -1px 1px#cca2ff
+        ;
+    
+    }
+
+    section#projetos h2{
+        color:#f1d7ff;
+        font-size: 38px;
+    }
+
+
+    footer {
+        background-color:#230443;
+        box-shadow: 0 0 40px 10px #9f91b0dc;
+        align-items: center;
+    }
+
+    footer .flex{
+        justify-content: space-between;
+    
+    }
+
+    .btn-social{
+        width: 60px;
+        height: 60px;
+        margin-left: 50%;
+        display: flex;
+    }
+    .logo-footer{
+        margin-top: -100px;
+    }
+    .btn-social button{
+        width: 60px;
+        height: 60px;
+        border-radius: 25%;
+        border: none;
+        background-color: #7f4ca5;
+        font-size: 35px;
+        cursor: pointer;
+        transition: .3s;
+        transform: scale(1.05);
+    }
+    
+    button:hover{
+        box-shadow: 0 0 10px 1px #9f91b0dc;
+    
+    }
+}
