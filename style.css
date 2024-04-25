@@ -381,9 +381,13 @@ button:hover{
         width: 100%;
     }
 
+    header{
+        padding: 0%;
+        width: 100%;
+    }
+
     .interface{
         padding-left: 2%;
-        padding-right: 2%;
     }
 
     section.topo-do-site{
@@ -413,7 +417,7 @@ button:hover{
     }
 
     .txt-topo-site h1{
-        font-size: 28px;
+        font-size: 25px;
         font-weight: 600;
     }
 
@@ -583,6 +587,6 @@ button:hover{
     }
     
     .btn-social{
-        padding-left: 20%;
+        margin-left: 38%;
     }
 }
