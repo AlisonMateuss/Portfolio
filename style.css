@@ -378,14 +378,35 @@ button:hover{
     /* CLASSES GERAIS */
     .flex{
         flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .interface{
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    section.topo-do-site{
+        padding: 0;
+        margin-left: 1%;
+        
     }
 
 
     .layout-minhas-especialidades{
         flex-direction: column-reverse;
+        padding: 0;
     }
 
     /* CABEÇALHO*/
+    
+
+    .img-topo-site img{
+        max-height: 200px;
+        max-width: 350px;
+        width: auto;
+        height: auto;
+    }
 
     .menu-desktop, .btn-contato{
         display: none;
@@ -398,17 +419,29 @@ button:hover{
 
     .topo-do-site p{
         margin-bottom: 5%;
-        padding: 2%;
         color: #fff0ff;
         font-size: 25px;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 
         'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
 
+    .txt-topo-do-site{
+        max-height: 200px;
+        max-width: 350px;
+        width: auto;
+        height: auto;
+    }
+
+    section#sobre-mim{
+        color: #f1d7ff;
+        font-size: 0px;
+        padding-right: 25%;
+    }
+
     section#sobre-mim h1{
         color: #f1d7ff;
-        font-size: 45px;
-        margin-left: 22%;
+        font-size: 50px;
+        margin-left: 10%;
     }
 
     section#sobre-mim p{
@@ -416,7 +449,6 @@ button:hover{
         Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-size: 25px;
         color: #f1d7ff;
-        padding-left: 5%;
     }
 
     .txt-minhas-especialidades h1{
@@ -435,10 +467,6 @@ button:hover{
     
     }
 
-    section#projetos h2{
-        color:#f1d7ff;
-        font-size: 38px;
-    }
 
 
     footer {
@@ -476,5 +504,85 @@ button:hover{
     button:hover{
         box-shadow: 0 0 10px 1px #9f91b0dc;
     
+    }
+
+    section#projetos{
+        box-shadow: 0 0 40px 10px #cca2ff80;
+        background-color: #230443;
+        justify-content: center;
+        padding-bottom: 5%;
+        padding-top: 3%;
+        padding-right: 25%;
+    }
+
+
+    .txt-Layout-especialidades{
+        overflow-y: scroll;
+        border: solid;
+        border-radius: 30px;
+        border-color: #cca2ff;
+        margin: 2%;
+        background-color: #630097;
+        transition: .2s;
+        position: relative;   
+        max-height: 250px;
+        width: 300px;
+    }
+
+    .txt-minhas-especialidades h1{
+        font-size: 35px;
+        color: #1b003a;
+        text-shadow: 
+        1px 1px#cca2ff
+        ,
+        1px -1px#cca2ff
+        , 
+        -1px -1px#cca2ff
+        , 
+        -1px 1px#cca2ff
+        ;
+        width: 100%;  
+        height: 100%;
+        display: inline-block;
+    }
+
+    section#projetos{
+        box-shadow: 0 0 40px 10px #cca2ff80;
+        background-color: #230443;
+        justify-content: center;
+        padding-bottom: 5%;
+        padding-top: 3%;
+        align-items: center;
+    }
+
+    section#projetos h2{
+        color:#f1d7ff;
+        font-size: 50px;
+        margin-left: 10%;
+    }
+
+    section#projetos .flex{
+        height: 100%;
+        gap: 60px;
+        align-items: center;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .img-projetos{
+        width: 250px;
+        height: 250px;
+        background-size: cover;
+        background-position:0%;
+        background-color: #6f42a3a4;
+        transition: 3s;
+        cursor: pointer;
+        border-radius: 40px;
+        position: relative;
+        margin-left: 20%; 
+    }
+    
+    .btn-social{
+        padding-left: 20%;
     }
 }
